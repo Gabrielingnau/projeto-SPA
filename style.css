@@ -1,0 +1,117 @@
+* {
+ font-family: 'Roboto', sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+
+:root {
+ font-size: 62.5%;
+
+ --cl-h2: #E1E1E6 ;
+ --cl-p: #E1E1E6 ;
+
+ --cl-nav-a: #C4C4CC ;
+ --cl-nav-a-hover: #FFFFFF ;
+
+ --cl-a: #FFFFFF ;
+ --border-a: #FFFFFF ;
+}
+
+body {
+ width: clamp(30rem, 100rem + 30vh, 300rem);
+ height: 100vh;
+ background: #140101;
+}
+
+#app img:nth-child(1) {
+ height: 100vh;
+ width: 100vw;
+ object-fit: cover;
+ position: fixed;
+ z-index: -1;
+ top: 0;
+}
+
+#app #page {
+ padding-top: 6rem;
+}
+
+#app .Home {
+ display: flex; 
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+}
+
+#app #pageHome {
+ height: 80vh;
+ width: 100vw;
+ display: flex; 
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+ top: 0;
+}
+
+#app h2 {
+ font-weight: 700;
+ font-size: 4.8rem;
+ line-height: 125%;
+ margin-bottom: 2.4rem;
+
+ color: var(--cl-h2);
+}
+
+#app p {
+ font-weight: 400;
+ font-size: 1.8rem;
+ line-height: 160%;
+
+ color: var(--cl-p);
+}
+
+#app .Universo, .Exploração {
+ width: 64.8rem;
+ margin-left:10rem ;
+ padding-bottom: 10rem;
+}
+
+#app #pageHome .Home a {
+ text-decoration: none;
+ font-size: 14px;
+ line-height: 24px;
+ padding: 1.2rem 3.2rem;
+ border: solid var(--cl-a);
+ border-radius: .6rem;
+ text-transform: uppercase;
+ font-weight: 700;
+
+ color: var(--border-a);
+}
+
+main nav {
+ display: flex;
+ align-items: center;
+ padding: 4rem 4rem 4rem 0;
+}
+
+main nav img {
+ margin-left: 7rem;
+}
+
+main nav a {
+ cursor: pointer;
+ margin-left: 4rem;
+ text-decoration: none;
+ font-weight: 400;
+ font-size: 2.1rem;
+ line-height: 2.2rem;
+
+ color: var(--cl-nav-a);
+}
+
+main nav a:hover {
+ color:  var(--cl-nav-a-hover);
+ font-weight: 700;
+}
